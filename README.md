@@ -36,9 +36,6 @@ app.controller("myCtrl", function ($scope) {
 ```
 
 - [`time`]: In two ways:
-     - Object Time: [`string-time`] property 
-     - String Time
-- [Angular 2](#angular-2)
-- [Installation](#installation)
-- [Support](#support)
-- [Contributing to the project](#contributing-to-the-project)
+     - Object Time: [`string-time`] property is `false`
+     - String Time: [`string-time`] property is `true`
+
