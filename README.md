@@ -39,3 +39,26 @@ app.controller("myCtrl", function ($scope) {
      - Object Time: [`string-time`] property is `false`
      - String Time: [`string-time`] property is `true`
 
+
+#### Object Time sample: 
+```js
+    $scope.timeConfig = {
+        time: { h: 10, m: 0, s: 0 },
+        stringTime: false
+        };
+``` 
+
+#### String Time sample: 
+```js
+    $scope.timeConfig = {
+        time: "10:00:00",
+        stringTime: true,
+        };
+```
+
+- [`has-second`]: Whether to display Second 
+     - Do not Show Second: [`has-second`] property is `false`
+     - Show Second: [`has-second`] property is `true`
+
+- [`max-hour`]: (Defaults: 24) Maximum Hour a user can select
+- [`size`]: (Defaults: md) User can select size `lg` or `sm`
