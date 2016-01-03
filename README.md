@@ -17,7 +17,7 @@ All settings can be provided as attributes in the `sui-time-picker`
 
 
 ```html
-<div class="container" ng-app="simpleAngularUI" ng-controller="myCtrl">
+<div class="container" ng-app="myApp" ng-controller="myCtrl">
         <div class="row">
             <div class="col-md-6">
                 <sui-time-picker time="timeConfig.time" string-time="timeConfig.stringTime" has-second="true"></sui-time-picker>
@@ -27,6 +27,7 @@ All settings can be provided as attributes in the `sui-time-picker`
     </div>
 ```
 ```js
+var app = angular.module("myApp", ["simpleAngularUI"]);
 app.controller("myCtrl", function ($scope) {
     $scope.timeConfig = {
         time: { h: 10, m: 0, s: 0 },
